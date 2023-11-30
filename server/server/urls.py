@@ -22,5 +22,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('predict/',views.predict)
+    path('upload',views.predict)
 ] + static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
