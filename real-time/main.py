@@ -2,7 +2,7 @@ from keras.models import load_model
 import numpy as np
 import cv2
 
-model = load_model('fer50.h5')      #loading emotion recognizing model
+model = load_model('fer50narrow2wideHist.h5')      #loading emotion recognizing model
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')  #loading face detection model
 
 def predict_class(img):     #passing face as argument
